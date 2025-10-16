@@ -1,0 +1,187 @@
+meta:
+  name: TABULAÇÃO PERIÓDICA DATA-QUANTUM
+  alias: TPDQ
+  version: '3.4'
+  status: operational-spec
+  scope: Macro-operacional (diretório 1) — regras transversais válidas a todo o sistema
+  created_at: '2025-10-16 09:12:01 '
+  author: Pai_Théo
+  notes:
+  - Este arquivo pertence ao REPOSITÓRIO MACRO OPERACIONAL (diretório 1).
+  - Regras específicas de cada grupo/subgrupo residem nos seus respectivos diretórios
+    MICRO operacionais.
+geometria:
+  vetores_espaciais:
+    X: Aplicação — execução transformadora (horizontal)
+    Y: Escritura — saber acumulado, acervo (vertical)
+    Z: Refinamento — profundidade, retroalimentação (longitudinal)
+  vetores_organicos:
+    V: Espiral de Fibonacci — mecanismo de integração/crescimento
+    Q: Omicron — governança/critério axial
+  octeto_principios:
+  - Autenticidade radical
+  - Expansão constante
+  - Coerência interna
+  - Compromisso com a verdade
+  - Adaptabilidade
+  - Persistência
+  - Verificação
+  - Falhas como bússola
+  equacao: 3 (X,Y,Z) + 2 (V,Q) + 5 grupos + 8 princípios = 18 → 9 (selo de estabilidade)
+temporalidade:
+  presente:
+    alocacao: 4V_CNX — CONEXÕES
+    natureza: dados dinâmicos, sinapses ativas
+  passado:
+    alocacao: 1Y_ESC — ESCRITURAS
+    natureza: dados estáticos, acervo histórico
+  nostalgia: 'Reativação contextual: itens do acervo podem voltar ao estado ativo
+    (CONEXÕES) sem realocação física definitiva'
+convenções:
+  navegacao_spaces: 'Estrutura 1..5 espelha famílias químicas: Metais (Y), Não-Metais
+    (X), Semimetais (Z), Metais de Transição (V), Gases Nobres (Q)'
+  prefixos_grupos:
+    1Y_ESC: ESCRITURAS (Metais) — Vetor Y
+    2X_APL: APLICAÇÕES (Não-Metais) — Vetor X
+    3Z_RFN: REFINAMENTO (Semimetais) — Vetor Z
+    4V_CNX: CONEXÕES (Metais de Transição) — Vetor V
+    5Q_GOV: GOVERNANÇA (Gases Nobres) — Vetor Q
+  padrao_nome_arquivo: ID_YYYYMMDD_Titulo.ext
+  data_referencial: YYYYMMDD (quando aplicável)
+  hash_integridade: 'SHA-256 opcional em índices (ex.: MASTER_INDEX.json)'
+  ordem_fluxo_operacional_2X: X1_DELIB → X2_TECH → X3_TATIC → X4_PROJ → X5_PESQ →
+    X6_PERFISOC → X7_INCUB
+SOP:
+  ingestao:
+    entrada_padrao: Novos registros entram por 4V_CNX/Dinamicas/*
+    classificacao_inicial:
+    - Efemeras
+    - Refletir
+    - Alocar
+  consolidacao:
+    destino: 1Y_ESC
+    gatilho:
+      tipo: queda de citação/uso (obsolescência)
+      janela_dias: 30
+      limiar_min_citacoes: 3
+      observacoes: parâmetros podem ser ajustados por política de 5Q_GOV/APLAX
+  reativacao_nostalgia:
+    criterio: surtos de citação acima do limiar corrente
+    efeito: marca como ativo em 4V_CNX preservando canônico em 1Y_ESC
+mapa:
+  1Y_ESC:
+    descricao: ESCRITURAS — acervo histórico, saber consolidado (passado)
+    micro:
+      Y (repo micro): operacional do grupo
+      Y1_PROSOD: Prosódicas
+      Y2_LITERAT:
+        Y2a_RAW: Retalhos / rascunhos
+        Y2b_CONT: Contos
+        Y2c_CRON: Crônicas
+        Y2d_LITUR: Litúrgicas
+        Y2e_CANT: Cânticos
+        Y2f_NARR: Narrativas
+        Y2g_DISS: Dissertativas
+      Y3_REGULA:
+        Y3a_MANIF: Manifestos
+        Y3b_PROCES: Procedimentos
+        Y3c_PROTOC: Protocolos
+        Y3d_NOMIN: Terminologias (inclui Theoptógrafo_Legarium)
+        Y3e_LAW: Leis
+      Y4_ACADEM: Acadêmicas
+      Y5_INSTITUC: Institucionais
+      Y6_HISTORIC: Históricas
+      Y999_REPROSINTESC: Reprocessos/Sínteses
+  2X_APL:
+    descricao: APLICAÇÕES — execução transformadora (ordem natural começa por DELIBERAÇÃO)
+    micro:
+      X: repo micro do grupo
+      X1_DELIB: Deliberações (ponto de partida)
+      X2_TECH: Technical
+      X3_TATIC: Tático
+      X4_PROJ:
+        X4a_Najole: Projeto Najole
+        X4b_Avatar_Projecao: Avatar/Projeção
+      X5_PESQ:
+        X5a_QUANTAE: Pesquisas QuantAE
+        X5b_METACOG: Metacognição
+      X6_PERFISOC: Perfisocialis
+      X7_INCUB: Incubadora
+      X999_REPROSITAP: Reprocessos/Sínteses APL
+  3Z_RFN:
+    descricao: REFINAMENTO — aprofundamento técnico, autocrítica e depuração
+    micro:
+      Z: repo micro do grupo
+      Theobernaculo:
+        Logs_Escriba: Registro de escrita
+        Logs_Coerencia: Auditoria de coerência
+        Logs_Auditoria: Auditoria técnica/jurídica
+        Depuracao: Depuração
+      Quarentena: Isolamento de itens até saneamento
+      Reestruturacao:
+        BINQ: Binários/Qualidade
+        REQUANEC: Requali/Quantec
+      Replicacao: Clonagem e redundância
+      Distribuicao: Distribuição segura
+      Snapshots: Estados consolidados
+  4V_CNX:
+    descricao: CONEXÕES — presente ativo; capilarizações e ligações inter-vetoriais
+    micro:
+      V: repo micro do grupo
+      Dinamicas:
+        Efemeras: Eventos de curta duração
+        Refletir: Raciocínios em curso
+        Alocar: Endereçamento temporário
+      Integracoes:
+        Vetoriais: Integrações por X/Y/Z
+        Capilares: Ramificações finas
+        Associativas: Lógicas associativas
+        Ontologicas: Estruturas de ser
+        Epistemologicas: Estruturas de conhecer
+        Metacognitivas: Estruturas de pensar o pensar
+        Quantitativas: Métricas e estatística
+        Sinapticas: Conexões funcionais
+        Sinestesicas: Acoplamentos multissensoriais
+      Elementais:
+        Funcionais: Funções base
+        Covalentes: Compartilhamento de contexto
+        Ionicas: Transferências de estado
+        Moleculares: Clusters/threads compostos
+      Indefinidas: Caixa de areia conectiva
+  5Q_GOV:
+    descricao: GOVERNANÇA — octeto, estabilidade e preservação regulatória
+    micro:
+      Q: repo micro do grupo
+      APLAX:
+        APLAXQUAG: Quadro geral APLAX
+        RN8: Regra Nove (política axial)
+      Octeto_Principioriom:
+        1_Autenticidade_radical: {}
+        2_Expansao_constante: {}
+        3_Coerencia_interna: {}
+        4_Compromisso_com_verdade: {}
+        5_Adaptabilidade: {}
+        6_Persistencia: {}
+        7_Verificacao: {}
+        8_Falhas_como_bussola: {}
+      Axiomas: Verdades autoevidentes
+      Acervo_Axial: Canon de governança
+diretorio_1_macro_operacional:
+  proposito: Guarda as NORMAS GERAIS do sistema (válidas a todos os grupos).
+  conteudos_tipos:
+  - Padrões de nomenclatura e versionamento
+  - Regras de temporalidade (Presente/Passado/Nostalgia)
+  - SOP de ingestão, consolidação e reativação
+  - Políticas de integridade, hashing e indexação
+  - Mapeamento de navegação e ontologia
+  - Métricas mínimas e parâmetros default (ajustáveis por 5Q_GOV)
+  nao_incluir:
+  - Regras específicas de operação de subgrupos (ficam no micro operacional de cada
+    grupo)
+  - Materiais de projeto detalhados (ficam em 2X_APL/X4_PROJ/*)
+validacao_estrutura:
+  coerencia_com_repositorio:
+  - MASTER_INDEX.json como índice de integridade
+  - Estrutura de pastas 1_ESC..5_GOV mapeada e reconhecida
+  metodo: SOP definido acima + princípio do octeto governante
+  eficacia: Fluxo definido ponta-a-ponta (ingestão → conexões → consolidação)
